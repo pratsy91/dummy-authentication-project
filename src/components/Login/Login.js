@@ -44,11 +44,11 @@ const Login = (props) => {
 
   useEffect(() => {
     const id = setTimeout(() => {
-      console.log("validity");
+      // console.log("validity");
       setFormIsValid(emailValid && passValid);
     }, 500);
     return () => {
-      console.log("cleanup");
+      // console.log("cleanup");
       clearTimeout(id);
     };
   }, [emailValid, passValid]);
